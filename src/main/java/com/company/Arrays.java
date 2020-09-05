@@ -15,6 +15,6 @@ public class Arrays {
              ) {
             sum += number;
         }
-    return sum/array.length;
+    return (double) sum/array.length;
     }
 }
