@@ -29,9 +29,7 @@ public class Strings {
             if (str.length() >= outputWord.length()) {
                 outputWord = str;
             }
-
         }
         return outputWord + " " + outputWord.length();
     }
-
 }

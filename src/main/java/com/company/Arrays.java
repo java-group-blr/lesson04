@@ -9,6 +9,7 @@ package com.company;
  * Результат: 4
  */
 public class Arrays {
+    
     public static double findAverage(int[] array) {
         int sum = 0;
         for (int number: array
