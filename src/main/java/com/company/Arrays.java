@@ -10,7 +10,7 @@ package com.company;
  */
 public class Arrays {
     public static double findAverage(int[] array) {
-        return 0;
+        //return 0;
         int[] arr = {1,3,5,8};
         int sum_of_numbers = 0;
         for (int i = 0; i < array.length; i++) {
