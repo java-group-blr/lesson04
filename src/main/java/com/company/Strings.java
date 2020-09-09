@@ -19,8 +19,7 @@ package com.company;
  * Результат: "SUCCESS 7"
  */
 public class Strings {
-    String string = "Java is the best language in the world";
-
+    
     public static String findLongestString(String string) {
 
         String[] stringArray;

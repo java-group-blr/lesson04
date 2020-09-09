@@ -9,7 +9,6 @@ package com.company;
  * Результат: [1,23,8,6,3,42]
  */
 public class Sort {
-    int[] array = {1,23,42,6,8,3};
 
     public static int[] sortArray(int[] array) {
         for (int i = 0; i < array.length; i++){
