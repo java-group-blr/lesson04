@@ -24,26 +24,15 @@ public class Strings {
 
     public static String findLongestString(String string) {
 
-
-        String[] strArr = string.trim().split(" ");
-
+        String[] strArr = string.split(" ");
         if (strArr.length == 1)
-
             return string.toUpperCase() + " " + string.length();
-
         String result = strArr[0];
-
-        for (String str : strArr
-        ) {
+        for (String str : strArr) {
             if (str.length() >= result.length()) {
-
                 result = str;
-
             }
-
-
         }
-
         return result + " " + result.length();
         // Чтобы вернуть в верхнем регистре нужно  сделать  return result.toUpperCase() + " " + result.length();
         //но тогда тест не проходит, или я что то путю вывел верхний через майн

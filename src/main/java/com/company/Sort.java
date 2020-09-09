@@ -18,15 +18,14 @@ public class Sort {
                     int x = array[i];
                     array[i] = array[j];
                     array[j] = (int) x;
-
                     System.out.println(array[i]);
                 }
             }
         }
-        int re = array[0];
+        int replace = array[0];
         array[0] = array[array.length - 1];
-        array[array.length - 1] = re;
-        System.out.println(re);
+        array[array.length - 1] = replace;
+        System.out.println(replace);
 
         return array;
 
