@@ -27,7 +27,7 @@ public class Main {
         }
 
         System.out.println("ЗАДАНИЕ 3");
-        String arr3 = "Live without regrets";
+        String arr3 = "Success";
         System.out.println(arr3);
         Strings strings = new Strings();
         String arr_word = Strings.findLongestString(arr3);

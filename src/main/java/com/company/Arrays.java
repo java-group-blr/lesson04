@@ -11,7 +11,7 @@ package com.company;
 public class Arrays {
     public static double findAverage(int[] array) {
         double average_number = 0;
-        int sum_of_numbers = 0;
+        double sum_of_numbers = 0;
         for (int i = 0; i < array.length; i++) {
             sum_of_numbers += array[i];
         }
