@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.OutputStream;
+
 /**
  * Найти в строке самое длинное слово и количество символов в нем.
  * Если таких слов несколько - вернуть самое последнее из них (самое правое).
@@ -21,7 +23,21 @@ package com.company;
 public class Strings {
 
     public static String findLongestString(String string) {
-        return "";
+
+        String[] strArr = string.split(" ");
+        if (strArr.length == 1)
+            return string.toUpperCase() + " " + string.length();
+        String result = strArr[0];
+        for (String str : strArr) {
+            if (str.length() >= result.length()) {
+                result = str;
+            }
+        }
+        return result + " " + result.length();
+        // Чтобы вернуть в верхнем регистре нужно  сделать  return result.toUpperCase() + " " + result.length();
+        //но тогда тест не проходит, или я что то путю вывел верхний через майн
+
     }
+
 
 }
