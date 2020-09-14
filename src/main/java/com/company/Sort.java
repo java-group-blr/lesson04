@@ -1,17 +1,30 @@
 package com.company;
 
-/**
- * Дан целочисленный массив. Отсортировать его по убыванию и поменять местами первый и последний элемент.
- *
- * Например:
- *
- * Дано: [1,23,42,6,8,3]
- * Результат: [1,23,8,6,3,42]
- */
 public class Sort {
 
-    public static int[] sortArray(int[] array) {
-        return new int[0];
+    public static int[] sortArray(int[] mas) {
+        boolean isSorted = false;
+        int buf;
+
+        while(!isSorted){
+            isSorted = true;
+            for (int i = 0; i < mas.length-1; i++){
+                if(mas[i] < mas[i+1]){
+                    isSorted = false;
+
+                    buf = mas[i];
+                    mas[i] = mas [i+1];
+                    mas[i+1] = buf;
+                }
+            }
+        }
+        int firstElements = mas[0];
+        int lastElements = mas[mas.length-1];
+
+        mas[0] = lastElements;
+        mas[mas.length-1] = firstElements;
+
+        return mas;
     }
 
 }
