@@ -19,9 +19,15 @@ package com.company;
  * Результат: "SUCCESS 7"
  */
 public class Strings {
-
     public static String findLongestString(String string) {
-        return "";
+        String[] text = string.split(" "); // разбиваем предложение пробелами, чтобы получить массив слов
+        String max_word = text[0]; // создаем массив
+        if (text.length == 1)
+            return string.toUpperCase() + " " + string.length();
+        for (String word : text) {
+            if (word.length() >= max_word.length()) // Находим самое длинное слово
+                max_word = word;
+            }
+        return max_word + " " + max_word.length(); // Возврощяем самое длиное слова и количество символов в нем
     }
-
 }
