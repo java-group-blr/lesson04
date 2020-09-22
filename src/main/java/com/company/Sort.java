@@ -11,7 +11,18 @@ package com.company;
 public class Sort {
 
     public static int[] sortArray(int[] array) {
-        return new int[0];
+        for (int i = array.length-1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (array[j] < array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        int temp = array[array.length-1];
+        array[array.length-1] = array[0];
+        array[0] = temp;
+        return array;
     }
-
 }

@@ -21,7 +21,16 @@ package com.company;
 public class Strings {
 
     public static String findLongestString(String string) {
-        return "";
-    }
+        String longestString = "";
+        String[] array = string.split(" ");
 
+        if (array.length == 1)
+            return string.toUpperCase() + " " + string.length();
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].length() >= longestString.length())
+                longestString = array[i];
+        }
+        return longestString + " " + longestString.length();
+    }
 }
